@@ -32,11 +32,12 @@ class School
   end
 
   def end_time_to_clock_time
-    if end_time.to_i <= 12
-      twelve_hr_time = end_time
-    else
-      clock_time = end_time.to_i - 12
-      twelve_hr_time = "#{clock_time}:00"
-    end
+    # if end_time.to_i <= 12
+    #   end_time
+    # else
+    #   clock_time = end_time.to_i - 12
+    #   "#{clock_time}:00"
+    # end
+    "#{end_time.to_i%12}:00"
   end
 end
