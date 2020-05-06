@@ -31,5 +31,8 @@ class School
     @standard_student_names
   end
 
-
+  def end_time_to_clock_time
+    clock_time = end_time.to_i - 12
+    twelve_hr_time = "#{clock_time}:00"
+  end
 end
