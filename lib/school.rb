@@ -25,10 +25,11 @@ class School
   end
 
   def standard_student_names
-    @student_names.each do |name|
-      @standard_student_names << name.capitalize
-    end
-    @standard_student_names
+    # @student_names.each do |name|
+    #   @standard_student_names << name.capitalize
+    # end
+    # @standard_student_names
+    student_names.map { |name| name.capitalize}
   end
 
   def end_time_to_clock_time
